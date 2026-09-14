@@ -1,0 +1,51 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #1a1f2b;
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1rem 2rem;
+  background: #1a1f2b;
+}
+
+.nav a {
+  color: #e6ebf5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a.active {
+  color: #6ea8fe;
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.25rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8f0fe;
+  color: #1a56db;
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
