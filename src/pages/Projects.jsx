@@ -28,7 +28,7 @@ export default function Projects() {
   const [extraShown, setExtraShown] = useState(0)
 
   useEffect(() => {
-    fetch('/projects.json')
+    fetch(import.meta.env.BASE_URL + 'projects.json')
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch(() => setProjects([]))

@@ -11,7 +11,7 @@ export default function Dashboard() {
   const [refreshCount, setRefreshCount] = useState(0)
 
   const loadStats = () => {
-    fetch('/dashboard.json')
+    fetch(import.meta.env.BASE_URL + 'dashboard.json')
       .then((res) => res.json())
       .then((data) => setStats(data))
       .catch(() => setStats(fallbackStats))

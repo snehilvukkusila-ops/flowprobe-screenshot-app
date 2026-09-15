@@ -5,7 +5,7 @@ export default function Team() {
   const [members, setMembers] = useState([])
 
   useEffect(() => {
-    fetch('/team.json')
+    fetch(import.meta.env.BASE_URL + 'team.json')
       .then((res) => res.json())
       .then((data) => setMembers(data))
       .catch(() => setMembers([]))

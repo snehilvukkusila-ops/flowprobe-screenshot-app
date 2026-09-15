@@ -14,12 +14,12 @@ export default function TeamMember() {
   const [showActivity, setShowActivity] = useState(false)
 
   useEffect(() => {
-    fetch('/team.json')
+    fetch(import.meta.env.BASE_URL + 'team.json')
       .then((res) => res.json())
       .then((data) => setMember(data.find((m) => String(m.id) === String(id)) || null))
       .catch(() => setMember(null))
 
-    fetch('/projects.json')
+    fetch(import.meta.env.BASE_URL + 'projects.json')
       .then((res) => res.json())
       .then((data) => setOwnedProjects(data.filter((p) => String(p.ownerId) === String(id))))
       .catch(() => setOwnedProjects([]))
