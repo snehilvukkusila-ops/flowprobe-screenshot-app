@@ -1,18 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 
-// HashRouter deliberately, not BrowserRouter: GitHub Pages serves no
-// rewrite rules, so a deep-link/direct navigation to a sub-route (which a
-// crawler doing real page navigations, not only client-side link clicks,
-// may attempt) would 404 under history-based routing. Hash routing always
-// resolves to the same index.html regardless of the path after '#'.
+// BrowserRouter, not HashRouter (reverted 2026-09-15 — see the userflow-track
+// live-test findings for the full story). HashRouter's own real URLs are
+// '/flowprobe-screenshot-app/#/team' etc., but the userflow-track pipeline's
+// own route discovery constructs plain path URLs ('/flowprobe-screenshot-app
+// /team', no '#') when exploring a target app, so under HashRouter EVERY
+// direct-navigation candidate silently mismatched every declared route and
+// rendered this app's own NotFound page — confirmed directly via a live run's
+// exploration_results.json, where 12 of 16 captured screens showed
+// heading=['404'], including the literal base route. BrowserRouter's real
+// URLs match what the pipeline already assumes; public/404.html + the
+// restoration script in index.html (the standard rafgraph/spa-github-pages
+// technique) is the correct fix for the GH-Pages deep-link 404 problem this
+// swap reintroduces, and is already in place.
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="/flowprobe-screenshot-app">
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
 )
