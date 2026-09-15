@@ -4,12 +4,14 @@ import Dashboard from './pages/Dashboard.jsx'
 import Profile from './pages/Profile.jsx'
 import Settings from './pages/Settings.jsx'
 import About from './pages/About.jsx'
+import CreateReport from './pages/CreateReport.jsx'
 
 const links = [
   { to: '/', label: 'Home', end: true },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/profile', label: 'Profile' },
   { to: '/settings', label: 'Settings' },
+  { to: '/create-report', label: 'Create Report' },
   { to: '/about', label: 'About' },
 ]
 
@@ -29,6 +31,7 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/create-report" element={<CreateReport />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
