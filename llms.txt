@@ -1,0 +1,24 @@
+# Documentation home
+
+> A tiny, no-login app for testing docs generation
+
+## Docs
+
+- [Documentation home](./): A tiny, no-login app for testing docs generation
+- [About FlowProbe](user-guide/concepts/about): An overview of the FlowProbe application, introducing its purpose and highlighting key screens such as the team dashboard, profile, and settings pages.
+- [Team dashboard](user-guide/concepts/dashboard): An overview of the team dashboard available at /flowprobe-screenshot-app/dashboard.
+- [A tiny, no-login app for testing docs generation](user-guide/concepts/flowprobe-screenshot-app): A tiny, no-login web app for trying out documentation generation from a web application's user flows.
+- [Notifications](user-guide/concepts/notification): View the list of notifications with their Read or Unread status, and mark all of them as read at once.
+- [Candidate profile page](user-guide/concepts/profile): View a candidate's profile page, including their name, Profile badge, and team information.
+- [Projects](user-guide/concepts/project): View the list of projects with owner, deadline, and status information, filter the list by searching, and drill into a project's detail page.
+- [Settings](user-guide/concepts/setting): The settings page at /flowprobe-screenshot-app/settings for managing account preferences.
+- [Team](user-guide/concepts/team): Browse the team page to view each member's name, presence status (Active, Away, Offline), role, and the projects they own, with a + Invite action to add new teammates.
+- [Team details](user-guide/concepts/team-details): View the team page for team 1 at /flowprobe-screenshot-app/team/1.
+- [Manage account preferences overview](user-guide/overviews/manage-account-preferences): Where to find Manage account preferences and what you can do with it.
+- [Manage notifications overview](user-guide/overviews/manage-notifications): Where to find Manage Notifications and what you can do with it.
+- [Manage team members overview](user-guide/overviews/manage-team-members): Where to find Manage team members and what you can do with it.
+- [Review notifications overview](user-guide/overviews/review-notifications): Where to find Review Notifications and what you can do with it.
+- [Create a new report](user-guide/tasks/create-report): Start a new report by opening the Create Report screen, entering a report title, and selecting Next to begin building it.
+- [Invite a team member](user-guide/tasks/invite-flowprobe-screenshot-app): Use the /flowprobe-screenshot-app/invite page to send a teammate an invitation with a role, seat limit, access expiry date, and welcome message.
+- [Invite team](user-guide/tasks/invite-team): Where to find the + Invite button. What it does was not observed.
+- [Mark all read](user-guide/tasks/mark-all-read): Where to find the Mark all read button. What it does was not observed.

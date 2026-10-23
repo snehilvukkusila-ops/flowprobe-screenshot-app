@@ -1,0 +1,458 @@
+# Documentation home
+
+Source: ./
+
+# Index
+
+## concepts
+
+- [Notifications](user-guide/concepts/notification.md)
+- [Projects](user-guide/concepts/project.md)
+- [About FlowProbe](user-guide/concepts/about.md)
+- [Team dashboard](user-guide/concepts/dashboard.md)
+- [Settings](user-guide/concepts/setting.md)
+- [Team](user-guide/concepts/team.md)
+- [Team details](user-guide/concepts/team-details.md)
+- [A tiny, no-login app for testing docs generation](user-guide/concepts/flowprobe-screenshot-app.md)
+- [Candidate profile page](user-guide/concepts/profile.md)
+
+## overviews
+
+- [Review notifications overview](user-guide/overviews/review-notifications.md)
+- [Manage account preferences overview](user-guide/overviews/manage-account-preferences.md)
+- [Manage notifications overview](user-guide/overviews/manage-notifications.md)
+- [Manage team members overview](user-guide/overviews/manage-team-members.md)
+
+## tasks
+
+- [Create a new report](user-guide/tasks/create-report.md)
+- [Invite a team member](user-guide/tasks/invite-flowprobe-screenshot-app.md)
+- [Mark all read](user-guide/tasks/mark-all-read.md)
+- [Invite team](user-guide/tasks/invite-team.md)
+
+# About FlowProbe
+
+Source: user-guide/concepts/about
+
+## What it is
+
+The **About FlowProbe** screen presents the About FlowProbe page of the application. The screen is at `/flowprobe-screenshot-app/about`.
+
+The screen has the **Edge cases** section.
+
+![The About FlowProbe screen](screenshots/flowprobe-screenshot-app-about-1/0.png)
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/about`.
+
+# Team dashboard
+
+Source: user-guide/concepts/dashboard
+
+## What it is
+
+The **Team Dashboard** screen shows the team dashboard for your account. It is captured in the screenshot below.
+
+![The Team Dashboard screen](screenshots/flowprobe-screenshot-app-dashboard-1/0.png)
+
+## Where to find it
+
+On the **Preferences** screen, click **Dashboard**. The screen is at `/flowprobe-screenshot-app/dashboard`.
+
+## Actions on this screen
+
+- **Refresh**
+
+## Related
+
+- [Manage account preferences overview](../overviews/manage-account-preferences.md) — the feature this screen belongs to.
+
+# A tiny, no-login app for testing docs generation
+
+Source: user-guide/concepts/flowprobe-screenshot-app
+
+## What it is
+
+The **A tiny, no-login app for testing docs generation** screen displays the tiny, no-login app for testing docs generation (E7). 
+
+![The tiny, no-login app for testing docs generation screen](screenshots/flowprobe-screenshot-app-1/0.png)
+
+## Where to find it
+## Statuses you may see
+*   **FlowProbe**
+These are the values seen on this screen; others may exist (E2, E4).
+
+:::note
+This statement could not be confirmed against the project's own sources. Treat it as unverified.
+:::
+
+# Notifications
+
+Source: user-guide/concepts/notification
+
+## What it is
+
+The **Notifications** screen shows the list of notifications, each with its Read or Unread status.
+
+![The Notifications screen](screenshots/flowprobe-screenshot-app-notifications-1/0.png)
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/notifications`.
+
+## Statuses you may see
+
+- **Unread**
+- **Read**
+
+These are the values seen on this screen; others may exist.
+
+## Actions on this screen
+
+- **Mark all read**
+
+## Related
+
+- [Manage notifications overview](../overviews/manage-notifications.md) — the feature this screen belongs to.
+
+# Candidate profile page
+
+Source: user-guide/concepts/profile
+
+## What it is
+
+The **Jordan Rivera** screen shows a candidate's profile.
+
+![The Jordan Rivera screen](screenshots/flowprobe-screenshot-app-profile-1/0.png)
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/profile`.
+
+# Projects
+
+Source: user-guide/concepts/project
+
+## What it is
+
+The **Projects** screen shows the list of projects in a table with project, owner, status, and deadline information.
+
+You can filter the list with a search input that has the placeholder `Filter projects`.
+
+![The Projects screen. Some form field values are hidden for privacy.](screenshots/flowprobe-screenshot-app-projects-1/0.png)
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/projects`.
+
+## On this screen
+
+- **Project**
+- **Owner**
+- **Status**
+- **Deadline**
+
+## Fields
+
+| Field | Type | Required |
+| --- | --- | --- |
+| **Filter projects** | search | no |
+
+## Statuses you may see
+
+- **active**
+- **review**
+- **blocked**
+- **done**
+
+These are the values seen on this screen; others may exist.
+
+## Actions on this screen
+
+- **Load more**
+
+# Settings
+
+Source: user-guide/concepts/setting
+
+## What it is
+
+The **Preferences** screen shows a form for managing account preferences, with theme, language, notification frequency, two-factor authentication, and display name settings. It is part of the manage account preferences feature.
+
+![The Preferences screen with its form fields](screenshots/flowprobe-screenshot-app-settings-1/0.png)
+
+## Where to find it
+
+On the **Team Dashboard** screen, click **Settings**. The screen is at `/flowprobe-screenshot-app/settings`.
+
+## Fields
+
+| Field | Type | Required | Options |
+| --- | --- | --- | --- |
+| **Theme** | radio group | no | Light, Dark, System |
+| **Language** | select | no | — |
+| **Notification frequency** | select | no | — |
+| **Enable two-factor authentication** | checkbox | no | — |
+| **Display name** | text | yes | — |
+
+- **Display name**: the placeholder reads "Jane Doe".
+
+## Actions on this screen
+
+- **Save**
+
+## Related
+
+- [Manage account preferences overview](../overviews/manage-account-preferences.md) — the feature this screen belongs to.
+
+# Team
+
+Source: user-guide/concepts/team
+
+## What it is
+
+The **Team** screen shows a table of your team members with `Name`, `Role` and `Status` columns.
+
+![The Team screen](screenshots/flowprobe-screenshot-app-team-1/0.png)
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/team`.
+
+## On this screen
+
+- **Name**
+- **Role**
+- **Status**
+
+## Statuses you may see
+
+- **Active**
+- **Away**
+- **Offline**
+
+These are the values seen on this screen; others may exist.
+
+## Actions on this screen
+
+- **+ Invite**
+- **View activity**
+
+## Screenshots
+
+![After you click View](screenshots/flowprobe-screenshot-app-team-1/1.png)
+
+## Related
+
+- [Manage team members overview](../overviews/manage-team-members.md) — the feature this screen belongs to.
+
+# Team details
+
+Source: user-guide/concepts/team-details
+
+## What it is
+This screen displays the descriptive information for a team. (Unverified)
+
+## Where to find it
+Open `/flowprobe-screenshot-app/team/1`.
+
+# Manage account preferences overview
+
+Source: user-guide/overviews/manage-account-preferences
+
+## What it is
+
+Manage account preferences covers the **Team dashboard** and **Settings** screens.
+
+The **Team dashboard** screen shows a **Refresh** control that runs a Refresh action.
+
+:::note
+This statement could not be confirmed against the project's own sources. Treat it as unverified.
+:::
+
+The **Settings** screen shows a **Save** control that runs a Save action; **Save** was disabled when the screen was captured, before its inputs were filled.
+
+:::note
+This statement could not be confirmed against the project's own sources. Treat it as unverified.
+:::
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/dashboard`.
+
+## What you can do
+
+- [Team dashboard](../concepts/dashboard.md)
+- [Settings](../concepts/setting.md)
+
+## Screenshots
+
+![Team Dashboard](screenshots/flowprobe-screenshot-app-dashboard-1/0.png)
+
+![Before you fill it in. Some form field values are hidden for privacy.](screenshots/flowprobe-screenshot-app-settings-1/0.png)
+
+# Manage notifications overview
+
+Source: user-guide/overviews/manage-notifications
+
+## What it is
+
+Manage Notifications shows the status badges and actions for your notifications.
+
+The **Notifications** screen shows `Unread` and `Read` status badges and a **Mark all read** control.
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/notifications`.
+
+## What you can do
+
+- [Notifications](../concepts/notification.md)
+- [Mark all read](../tasks/mark-all-read.md)
+
+## Screenshots
+
+![Notifications](screenshots/flowprobe-screenshot-app-notifications-1/0.png)
+
+# Manage team members overview
+
+Source: user-guide/overviews/manage-team-members
+
+## What it is
+
+Manage team members is the feature where you see the people in your team and invite new ones.
+
+The **Team** screen shows the **Name**, **Role**, and **Status** columns and the **+ Invite** control.
+
+The **Team member** screen shows the **View activity** control and **Active** and **done** badges.
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/team`.
+
+## What you can do
+
+- [Team](../concepts/team.md)
+- [Invite team](../tasks/invite-team.md)
+
+## Screenshots
+
+![Team](screenshots/flowprobe-screenshot-app-team-1/0.png)
+
+![After you click View](screenshots/flowprobe-screenshot-app-team-1/1.png)
+
+# Review notifications overview
+
+Source: user-guide/overviews/review-notifications
+
+## What it is
+
+Review Notifications is the notifications feature of the application.
+
+The **Review Notifications** screen shows status badges, such as `Unread` and `Read`, and provides a **Mark all read** control and action.
+
+## Where to find it
+
+Open `/flowprobe-screenshot-app/notifications`.
+
+## Get started
+
+Start with [Mark all read](../tasks/mark-all-read.md).
+
+:::note
+This statement could not be confirmed against the project's own sources. Treat it as unverified.
+:::
+
+## What you can do
+
+- [Notifications](../concepts/notification.md)
+- [Mark all read](../tasks/mark-all-read.md)
+
+## Screenshots
+
+![Notifications](screenshots/flowprobe-screenshot-app-notifications-1/0.png)
+
+# Create a new report
+
+Source: user-guide/tasks/create-report
+
+## Steps
+
+1. On the **Create a new report** screen, click **Next**.
+
+    ![The Create a new report screen with a Report title field and a Next control](screenshots/flowprobe-screenshot-app-create-report-1/0.png)
+
+:::note
+This statement could not be confirmed against the project's own sources. Treat it as unverified.
+:::
+
+2. Enter a title in **Report title**.
+
+3. Click **Next**.
+
+# Invite a team member
+
+Source: user-guide/tasks/invite-flowprobe-screenshot-app
+
+## Steps
+
+1. Open `flowprobe-screenshot-app/invite`.
+2. Enter your teammate's email address in **Email**.
+   ![Invite a team member form with some field values hidden for privacy](screenshots/flowprobe-screenshot-app-invite-1/0.png)
+3. Select a role in **Role**.
+4. Click **Invite**.
+
+The other fields (**Send welcome email**, **Access expires**, **Seat limit**) are optional.
+
+## Fields
+
+| Field | Type | Required |
+| --- | --- | --- |
+| **Email** | email | yes |
+| **Role** | select | no |
+| **Send welcome email** | checkbox | no |
+| **Access expires** | date | no |
+| **Seat limit** | number | no |
+
+- **Seat limit**: minimum value 0.
+
+# Invite team
+
+Source: user-guide/tasks/invite-team
+
+## Steps
+
+1. Open the **Team** screen.
+
+   ![Starting screen · list · Team](screenshots/flowprobe-screenshot-app-team-1/0.png)
+
+2. Click **+ Invite**.
+
+What happens next was not observed.
+
+## Related
+
+- [Manage team members overview](../overviews/manage-team-members.md) — everything else you can do with Manage team members.
+
+# Mark all read
+
+Source: user-guide/tasks/mark-all-read
+
+## Steps
+
+1. Open the **Notifications** screen.
+
+    ![The Notifications screen with the Mark all read button](screenshots/flowprobe-screenshot-app-notifications-1/0.png)
+
+:::note
+This statement could not be confirmed against the project's own sources. Treat it as unverified.
+:::
+
+2. Click **Mark all read**.
+
+What happens next was not observed.
+
+## Related
+
+- [Manage notifications overview](../overviews/manage-notifications.md) — everything else you can do with Manage Notifications.
